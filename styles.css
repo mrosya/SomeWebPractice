@@ -49,8 +49,8 @@ header a {
 	display: block;	
 }
 
-.dropdown:hover .dropbtn {
-	background-color: #413dc0;
+.dropdown:hover .dropbtn button {
+	background-color: #b9cfd4;
 }
 @media (max-width: 499px) {
 	.header-wrap {
