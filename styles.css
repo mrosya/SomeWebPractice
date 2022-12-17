@@ -37,12 +37,14 @@ header a {
 	position: absolute;
 	background-color: #f1f1f1;
 	min-width: auto;
+	border-right: 2px solid rgb(181, 81, 81);
 	z-index: 1;
 }
 
 .dropcontent a {
 	color: black;
 	display: block;
+	border-bottom: 2px solid rgb(181, 81, 81);
 }
 
 .dropdown:hover .dropcontent {
@@ -52,12 +54,17 @@ header a {
 .dropdown:hover .dropbtn button {
 	background-color: #b9cfd4;
 }
+
+/*#canvas {
+	border: 2px solid red;
+}*/
+
 @media (max-width: 499px) {
 	.header-wrap {
 		display: none;
 	}
 
-	header {
+	.dropbtn button {
 		height: 51px;
 	}
 }
