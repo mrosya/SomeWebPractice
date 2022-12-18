@@ -8,7 +8,7 @@ body {
 header {
 	display: flex;
 	width: 100%;
-	background: aquamarine;
+	background-color: rgb(31, 224, 163);
 }
 
 header li {
@@ -32,10 +32,15 @@ header a {
 	display: inline-block;
 }
 
+.dropdown .dropbtn button {
+	background-color: rgb(47, 204, 135);
+	border-radius: 4px;
+	transition-duration: 0.4s;
+}
+
 .dropcontent {
 	display: none;
 	position: absolute;
-	background-color: #f1f1f1;
 	min-width: auto;
 	border-right: 2px solid rgb(181, 81, 81);
 	z-index: 1;
@@ -45,6 +50,7 @@ header a {
 	color: black;
 	display: block;
 	border-bottom: 2px solid rgb(181, 81, 81);
+	
 }
 
 .dropdown:hover .dropcontent {
@@ -52,7 +58,11 @@ header a {
 }
 
 .dropdown:hover .dropbtn button {
-	background-color: #b9cfd4;
+	background-color: rgb(23, 235, 217);
+}
+
+.dropdown .dropbtn button:active, button:focus {
+	outline: none;
 }
 
 /*#canvas {
@@ -65,7 +75,7 @@ header a {
 	}
 
 	.dropbtn button {
-		height: 51px;
+		border: none;
 	}
 }
 
