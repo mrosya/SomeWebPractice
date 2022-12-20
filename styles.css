@@ -42,40 +42,27 @@ header a {
 	display: none;
 	position: absolute;
 	min-width: auto;
-	border-right: 2px solid rgb(181, 81, 81);
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	z-index: 1;
 }
 
 .dropcontent a {
 	color: black;
-	display: block;
 	border-bottom: 2px solid rgb(181, 81, 81);
-	
+	display: block;
 }
 
-.dropdown:hover .dropcontent {
-	display: block;	
-}
-
-.dropdown:hover .dropbtn button {
-	background-color: rgb(23, 235, 217);
-}
-
-.dropdown .dropbtn button:active, button:focus {
+button:active, button:focus {
 	outline: none;
 }
 
-/*#canvas {
-	border: 2px solid red;
-}*/
+.show {
+	display: block;
+}
 
 @media (max-width: 499px) {
 	.header-wrap {
 		display: none;
-	}
-
-	.dropbtn button {
-		border: none;
 	}
 }
 
