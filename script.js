@@ -27,7 +27,7 @@ function myFunction() {
 }
 
 window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
+    if (!event.target.matches('#canvas')) {
 
         let dropdowns = document.getElementsByClassName("dropcontent");
         let i;
