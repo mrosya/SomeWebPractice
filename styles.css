@@ -60,6 +60,9 @@ button:active, button:focus {
 	display: block;
 }
 
+#canvas {	
+	outline: 1px solid black;
+}
 @media (max-width: 499px) {
 	.header-wrap {
 		display: none;
