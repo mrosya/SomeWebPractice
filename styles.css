@@ -9,6 +9,8 @@ header {
 	display: flex;
 	width: 100%;
 	background-color: rgb(31, 224, 163);
+	border-bottom-left-radius: 4px;
+	border-top-left-radius: 4px;
 }
 
 header li {
