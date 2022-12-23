@@ -34,6 +34,10 @@ header a {
 	display: inline-block;
 }
 
+.dropbtn {
+	height: 100%;
+}
+
 .dropdown .dropbtn button {
 	background-color: rgb(47, 204, 135);
 	border-radius: 4px;
@@ -62,8 +66,9 @@ button:active, button:focus {
 	display: block;
 }
 
-#canvas {	
-	outline: 1px solid black;
+#canvas {
+	display: table-cell;
+	vertical-align: middle;
 }
 @media (max-width: 499px) {
 	.header-wrap {
