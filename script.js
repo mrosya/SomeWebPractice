@@ -1,3 +1,8 @@
+function start() {
+	draw();
+	btnWidth();
+}
+
 function draw() {
     let canvas = document.getElementById('canvas');
     if (canvas.getContext) {
@@ -20,6 +25,18 @@ function draw() {
         ctx.lineTo (5, 30);
         ctx.fill();
     }
+}
+	
+function btnWidth() {
+	let btnW = document.getElementById("firstbtn").clientWidth;
+	let btnH = document.getElementById("firstbtn").clientHeight;
+	let result = btnW !== btnH;
+	if (result & (btnH > btnW)) {
+	let discard = btnH - btnW;
+	btnW = btnW + discard;
+	}
+	console.log(btnW + " " + btnH);
+	return btnW;
 }
 
 function myFunction() {
