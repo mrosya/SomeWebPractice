@@ -38,10 +38,9 @@ header a {
 	height: 100%;
 }
 
-.dropdown .dropbtn button {
-	background-color: rgb(47, 204, 135);
-	border-radius: 4px;
-	transition-duration: 0.4s;
+.dropdown button {
+	outline: none;
+	border: none;
 }
 
 .dropcontent {
@@ -54,8 +53,11 @@ header a {
 
 .dropcontent a {
 	color: black;
-	border-bottom: 2px solid rgb(181, 81, 81);
+	border-bottom: 1px solid rgb(181, 81, 81);
 	display: block;
+	padding: 6px 8px;
+	text-decoration: none;
+	background-color: aquamarine;
 }
 
 button:active, button:focus {
@@ -67,11 +69,13 @@ button:active, button:focus {
 }
 
 #canvas {
-	display: table-cell;
 	vertical-align: middle;
+	padding: 0;
+	margin: 0;
 }
+
 @media (max-width: 499px) {
-	.header-wrap {
+	.header-wrap ul li a {
 		display: none;
 	}
 }
