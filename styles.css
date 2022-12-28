@@ -2,13 +2,13 @@ body {
 	padding: 0;
     margin: 0;
     font-family: 'Rubik', sans-serif;
-    
 }
 
 header {
 	display: flex;
+	justify-content: space-between;
 	width: 100%;
-	background-color: rgb(31, 224, 163);
+	background-color: rgb(129, 238, 163);
 	border-bottom-left-radius: 4px;
 	border-top-left-radius: 4px;
 }
@@ -34,13 +34,12 @@ header a {
 	display: inline-block;
 }
 
-.dropbtn {
-	height: 100%;
-}
-
 .dropdown button {
 	outline: none;
 	border: none;
+	background-color: rgb(245, 245, 245);
+	height: 100%;
+	width: 51px;
 }
 
 .dropcontent {
@@ -49,39 +48,58 @@ header a {
 	min-width: auto;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	z-index: 1;
+	background-color: rgb(245, 245, 245);
+}
+
+.dropref {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .dropcontent a {
 	color: black;
-	border-bottom: 1px solid rgb(181, 81, 81);
 	display: block;
-	padding: 6px 8px;
-	text-decoration: none;
-	background-color: aquamarine;
+	padding: 6px 8px;	
 }
 
 button:active, button:focus {
 	outline: none;
 }
 
+#canvas {
+	vertical-align: middle;
+}
+
+.blank {
+	height: 51px;
+	width: 51px;
+}
+
+.content {
+	background-color: rgb(0, 204, 255);
+	display: flex;
+	justify-content: center;
+}
+
 .show {
 	display: block;
 }
 
-#canvas {
-	vertical-align: middle;
-	padding: 0;
-	margin: 0;
-}
-
 @media (max-width: 499px) {
-	.header-wrap ul li a {
+	.header-wrap {
 		display: none;
 	}
 }
 
 @media (min-width: 500px) and (max-width: 2000px) {
 	.dropdown {
+		display: none;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.blank {
 		display: none;
 	}
 }
