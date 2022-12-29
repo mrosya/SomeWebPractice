@@ -8,7 +8,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
-	background-color: rgb(129, 238, 163);
+	background-color: rgb(245, 245, 245);
 	border-bottom-left-radius: 4px;
 	border-top-left-radius: 4px;
 }
@@ -39,7 +39,7 @@ header a {
 	border: none;
 	background-color: rgb(245, 245, 245);
 	height: 100%;
-	width: 51px;
+	width: 15vw;
 }
 
 .dropcontent {
@@ -70,14 +70,26 @@ button:active, button:focus {
 }
 
 .blank {
-	height: 51px;
-	width: 51px;
+	height: 100%;
+	width: 15vw;
+}
+
+.content-wrap {
+	display: flex;
 }
 
 .content {
-	background-color: rgb(0, 204, 255);
-	display: flex;
-	justify-content: center;
+	width: 100%;
+}
+
+.content img {
+	width: 100%;
+}
+
+.contentblank {
+	height: 100%;
+	width: 5vw;
+	background-color: red;
 }
 
 .show {
