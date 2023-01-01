@@ -47,13 +47,13 @@ header a {
 	display: none;
 	position: absolute;
 	min-width: auto;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
-	background-color: rgb(245, 245, 245);
+	background-color: rgb(245,245,245);
 }
 
 .dropref {
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 .dropcontent a {
@@ -100,10 +100,29 @@ figure {
 
 figcaption {
 	font: italic smaller 'Rubic', sans-serif;
-	background-color: rgb(245, 245, 245);
+	background-color: rgb(245,245,245);
 }
 
-img {
+.maintheme {
+	margin-top: 5vw;
+	margin-bottom: 5vw;
+	background-color: rgba(247,255,128,0.2);
+	border: 2px solid rgba(170,179,54,0.2);
+	outline: none;
+	border-radius: 4px;
+}
+
+.maintheme a {
+	text-decoration: none;
+	color: black;
+}
+
+.maintheme a:hover a:active {
+	color: black;
+	text-decoration: none; 
+}
+
+.content img {
 	width: 100%;
 }
 
@@ -111,6 +130,20 @@ img {
 	height: 100%;
 	width: 5vw;
 	background-color: red;
+}
+
+.cardtheme {
+	display: flex;
+}
+
+.card {
+	width: 50%;
+	text-align: center;
+}
+
+.card a {
+	text-decoration: none;
+	color: black;
 }
 
 .show {
