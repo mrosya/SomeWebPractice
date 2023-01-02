@@ -119,6 +119,7 @@ figcaption {
 .maintheme a {
 	text-decoration: none;
 	color: black;
+	
 }
 
 .maintheme a:hover a:active {
@@ -126,28 +127,40 @@ figcaption {
 	text-decoration: none; 
 }
 
-.content img {
+img {
 	width: 100%;
 }
 
 .contentblank {
 	height: 100%;
 	width: 5vw;
-	background-color: red;
 }
 
 .cardtheme {
 	display: flex;
+	margin-top: 5vw;
+	height: 18vh;
 }
 
 .card {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
 	width: 50%;
-	text-align: center;
+	text-align: center;	
 }
 
 .card a {
 	text-decoration: none;
 	color: black;
+}
+
+.cardref {
+	background-color: rgb(245,245,245);
+}
+
+.cardtheme .card img {
+	object-fit: cover;
 }
 
 .show {
@@ -180,7 +193,6 @@ figcaption {
 	}
 
 	
-
 	.xltheme {
 		display: flex;
 	}
