@@ -19,6 +19,10 @@ header li {
 	margin-left: 15px;
 }
 
+header ul {
+	padding: 0;
+}
+
 header a {
 	text-decoration: none;
 }
@@ -167,5 +171,27 @@ figcaption {
 
 	.blank {
 		display: none;
+	}
+
+	.contentblank {
+		height: 100%;
+		width: 10vw;
+		background-color: red;
+	}
+
+	
+
+	.xltheme {
+		display: flex;
+	}
+
+	.content-wrap .content figure {
+		width: 50%;
+	}
+
+	.content-wrap .content .maintheme {
+		width: 50%;
+		margin-top: 0;
+	margin-bottom: 0;
 	}
 }
