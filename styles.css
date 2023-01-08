@@ -4,6 +4,20 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
+a {
+	text-decoration: none;
+	color: black;
+}
+
+img {
+	width: 100%;
+	object-fit: cover;
+}
+
+li {
+	list-style-type: none;
+}
+
 header {
 	display: flex;
 	justify-content: space-between;
@@ -62,7 +76,6 @@ header a {
 }
 
 .dropcontent a {
-	color: black;
 	display: block;
 	padding: 6px 8px;	
 }
@@ -82,10 +95,6 @@ button:active, button:focus {
 
 .content-wrap {
 	display: flex;
-}
-
-.content_blank {
-	width: 10%;
 }
 
 .content {
@@ -113,33 +122,21 @@ figcaption {
 }
 
 .maintheme {
-	margin-top: 5vw;
-	margin-bottom: 5vw;
+	margin-top: 3vh;
+	margin-bottom: 5vh;
 	background-color: rgba(247,255,128,0.2);
 	border: 2px solid rgba(170,179,54,0.2);
 	outline: none;
 	border-radius: 4px;
 }
 
-.maintheme a {
-	text-decoration: none;
-	color: black;
-	
+.maintheme p {
+	margin: 0;
 }
 
 .maintheme a:hover a:active {
 	color: black;
 	text-decoration: none; 
-}
-
-img {
-	width: 100%;
-}
-
-.card a {
-	text-decoration: none;
-	color: black;
-	
 }
 
 .cardref {
@@ -153,8 +150,40 @@ img {
 }
 
 .card {
-	width: 40%;
+	border-radius: 2px;
+	display: flex;
+	flex-direction: column;
+	height: 16vh;
+	margin-bottom: 3vh;
+	width: 30vw;
 	text-align: center;
+}
+
+h4 {
+	margin-left: 9px;
+}
+
+.news {
+	background-color: rgb(245,245,245);
+	display: flex;
+	flex-direction: column;
+}
+
+.news-block {
+	background-color: white;
+	display: flex;
+	margin: 2px 4px;
+}
+
+.news-time {
+	display: flex;
+	margin: 0 10px;
+	font-size: small;
+	align-items: center;
+}
+
+.content_blank {
+	width: 10vw;
 }
 
 .show {
@@ -164,6 +193,11 @@ img {
 @media (max-width: 586px) {
 	.header-wrap {
 		display: none;
+	}
+	
+	.card {
+		overflow: hidden;
+		width: 37.5vw;
 	}
 }
 
