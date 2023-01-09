@@ -122,14 +122,27 @@ figcaption {
 }
 
 .maintheme {
-	margin-top: 3vh;
+	border-radius: 20px;
+	display: flex;
+	flex-flow: column wrap;
 	margin-bottom: 5vh;
-	background-color: rgba(247,255,128,0.2);
-	border: 2px solid rgba(170,179,54,0.2);
-	outline: none;
-	border-radius: 4px;
+	margin-top: 3vh;
+	outline: none;	
 }
 
+.maintheme a {
+	background-color: rgba(247,255,128,0.2);
+	border: 2px solid rgba(170,179,54,0.2);
+	border-bottom: none;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.maintheme img {
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+	
 .maintheme a:hover a:active {
 	color: black;
 	text-decoration: none; 
