@@ -130,10 +130,6 @@ figcaption {
 	border-radius: 4px;
 }
 
-.maintheme p {
-	margin: 0;
-}
-
 .maintheme a:hover a:active {
 	color: black;
 	text-decoration: none; 
@@ -143,7 +139,15 @@ figcaption {
 	background-color: rgb(245,245,245);
 }
 
+.add-xlcard {
+	background-color: rgba(139, 128, 255, 0.2);
+	margin-bottom: 0;
+	padding: 20px;
+}
+
 .xlcard {
+	margin-top: 0;
+	background-color: rgba(147, 128, 255, 0.2);
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -155,6 +159,7 @@ figcaption {
 	flex-direction: column;
 	height: 16vh;
 	margin-bottom: 3vh;
+	overflow: hidden;
 	width: 30vw;
 	text-align: center;
 }
@@ -196,7 +201,6 @@ h4 {
 	}
 	
 	.card {
-		overflow: hidden;
 		width: 37.5vw;
 	}
 }
@@ -216,6 +220,7 @@ h4 {
 
 	.xltheme {
 		display: flex;
+		margin-bottom: 5vh;
 	}
 
 	.content-wrap .content figure {
@@ -229,6 +234,7 @@ h4 {
 	}
 	
 	.card {
-		width: 40%;
+		height: 26vh;
+		width: 18vw;
 	}
 }
