@@ -18,6 +18,12 @@ li {
 	list-style-type: none;
 }
 
+.content_blank {
+	width: 10vw;
+}
+
+
+
 header {
 	display: flex;
 	justify-content: space-between;
@@ -116,21 +122,26 @@ figure {
 	margin: 0;
 }
 
+figure img {
+	height: 100%;
+}
+
 figcaption {
 	font: italic smaller 'Rubic', sans-serif;
 	background-color: rgb(245,245,245);
 }
 
-.maintheme {
+.xltheme-item-4 {
+	position: relative;
 	border-radius: 20px;
 	display: flex;
-	flex-flow: column wrap;
+	flex-flow: column;
 	margin-bottom: 5vh;
 	margin-top: 3vh;
 	outline: none;	
 }
 
-.maintheme a {
+.xltheme-item-4 a {
 	background-color: rgba(247,255,128,0.2);
 	border: 2px solid rgba(170,179,54,0.2);
 	border-bottom: none;
@@ -138,22 +149,54 @@ figcaption {
 	border-top-right-radius: 4px;
 }
 
-.maintheme img {
-	border-bottom-left-radius: 4px;
-	border-bottom-right-radius: 4px;
+.xltheme-item-4 img {
+	height: 100%;
 }
-	
-.maintheme a:hover a:active {
+
+.some {
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+  vertical-align: middle;
+}
+
+.some p {
+  margin-bottom: 0;
+}
+
+.some-2 {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+}
+
+.xltheme-item-4 a:hover a:active {
 	color: black;
 	text-decoration: none; 
 }
 
-.cardref {
-	background-color: rgb(245,245,245);
+.news-block {
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 2px 4px;
+}
+
+.news-time {
+	display: flex;
+	margin: 0 10px;
+	font-size: small;
+	align-items: center;
+}
+
+.news-block a {
+	margin: 4px 10px;
 }
 
 .add-xlcard {
-	background-color: rgba(139, 128, 255, 0.2);
+	background-color: rgba(247,255,128,0.2);
 	margin-bottom: 0;
 	padding: 20px;
 }
@@ -164,6 +207,10 @@ figcaption {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+}
+
+.cardref {
+	background-color: rgb(245,245,245);
 }
 
 .card {
@@ -177,38 +224,12 @@ figcaption {
 	text-align: center;
 }
 
-h4 {
-	margin-left: 9px;
-}
-
-.news {
-	background-color: rgb(245,245,245);
-	display: flex;
-	flex-direction: column;
-}
-
-.news-block {
-	background-color: white;
-	display: flex;
-	margin: 2px 4px;
-}
-
-.news-time {
-	display: flex;
-	margin: 0 10px;
-	font-size: small;
-	align-items: center;
-}
-
-.content_blank {
-	width: 10vw;
-}
-
 .show {
 	display: block;
 }
 
 @media (max-width: 586px) {
+	
 	.header-wrap {
 		display: none;
 	}
@@ -218,32 +239,48 @@ h4 {
 	}
 }
 
+@media (min-width: 587px) and (max-width: 1250px) {
+
+	.xltheme-item-2 {
+		width: 40%;
+	}
+
+	.xltheme-item-3 {
+		width: 50%;
+	}
+}
+
+@media (min-width: 1250px) and (max-width: 2000px) {
+	
+	.xltheme-item-2, .xltheme-item-3 {
+		width: 20%;
+	}
+
+	.content_blank {
+		width: 15vw;
+	}
+	
+}
+
 @media (min-width: 587px) and (max-width: 2000px) {
-	.dropdown {
-		display: none;
-	}
-
-	.logo {
-		display: none;
-	}
-
-	.blank {
+	
+	.logo, .blank, .dropdown {
 		display: none;
 	}
 
 	.xltheme {
 		display: flex;
-		margin-bottom: 5vh;
+		flex-wrap: wrap;
+		overflow: hidden;
+		justify-content: space-between;
 	}
 
-	.content-wrap .content figure {
+	.xltheme-item-1 {
 		width: 50%;
 	}
 
-	.content-wrap .content .maintheme {
+	.xltheme-item-4 {
 		width: 50%;
-		margin-top: 0;
-		margin-bottom: 0;
 	}
 	
 	.card {
