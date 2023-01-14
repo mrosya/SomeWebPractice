@@ -22,8 +22,6 @@ li {
 	width: 10vw;
 }
 
-
-
 header {
 	display: flex;
 	justify-content: space-between;
@@ -130,7 +128,7 @@ figcaption {
 }
 
 .xltheme-item-3 {
-	background-color: rgb(245,245,205);
+	background-color: rgb(245,245,245);
 	border-radius: 4px;
 	display: flex;
 	flex-flow: column wrap;
@@ -140,6 +138,7 @@ figcaption {
 
 .xltheme-item-3 h4 {
 	align-self: center;
+	padding: 12px;
 }
 
 .news-wrap {
@@ -171,25 +170,37 @@ figcaption {
 }
 
 .xltheme-item-4 {
+	background-color: rgba(245,245,245,1);
+	display: flex;
+	flex-flow: column wrap;
+	margin-top: 3vh;
+}
+
+.xltheme-item-4 h4{
+	align-self: center;
+	padding: auto;
+	margin: auto;
+}
+
+.theme-4-wrap {
 	position: relative;
 	border-radius: 100px;
 	display: flex;
 	flex-flow: column;
-	margin: 3vh 0;
 	outline: none;	
 }
 
-.xltheme-item-4 a {
+.theme-4-wrap a {
 	padding: 4px;
 }
 
-.xltheme-item-4 img {
+.theme-4-wrap img {
 	height: 100%;
 	border-radius: 4px;
 }
 
 .some {
-	background-color: rgba(255,255,255,0.6);
+	background-color: rgba(255,255,255,0.8);
 	position: absolute;
 	left: 0%;
 	right: 0%;
@@ -201,7 +212,7 @@ figcaption {
 }
 
 .some-2 {
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(245,245,245,0.4);
   text-align: end;
   position: absolute;
   left: 0%;
@@ -209,15 +220,16 @@ figcaption {
   bottom: 0%;
 }
 
-.xltheme-item-4 a:hover a:active {
+.theme-4-wrap a:hover a:active {
 	color: black;
 	text-decoration: none; 
 }
 
 .add-xlcard {
 	background-color: rgb(245,245,205);
-	margin-bottom: 0;
+	margin: 3vh 0 0 0;
 	padding: 20px;
+	text-align: center;
 }
 
 .xlcard {
@@ -226,6 +238,7 @@ figcaption {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	padding: 0 4px;
 }
 
 .cardref {
@@ -233,7 +246,7 @@ figcaption {
 }
 
 .card {
-	border-radius: 2px;
+	border-radius: 4px;
 	display: flex;
 	flex-direction: column;
 	height: 16vh;
