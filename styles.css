@@ -18,9 +18,16 @@ li {
 	list-style-type: none;
 }
 
+h3, h4 {
+	text-align: center;
+	width: 100%;
+}
+
 .content_blank {
 	width: 10vw;
 }
+
+/* Оформление header и выпадающего меню */
 
 header {
 	display: flex;
@@ -92,6 +99,8 @@ button:active, button:focus {
 	width: 15vw;
 }
 
+/* Контент страницы */
+
 .content-wrap {
 	display: flex;
 }
@@ -108,37 +117,30 @@ button:active, button:focus {
 	text-align: center;
 }
 
+/* Центральное фото с подписью */
 figure {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
 	margin: 0;
 }
 
-figure img {
-	height: 100%;
-	border-radius: 4px 4px 0 0;
-}
+
 
 figcaption {
-	font: italic smaller 'Rubic', sans-serif;
 	background-color: rgb(245,245,245);
-	border-radius: 0 0 4px 4px;
-	padding: 0 2px;
+	font: italic smaller 'Rubic', sans-serif;
 }
 
-.xltheme-item-3 {
+/* Новостной блок */
+
+.xltheme-item-2 {
 	background-color: rgb(245,245,245);
 	border-radius: 4px;
 	display: flex;
 	flex-flow: column wrap;
 	overflow: hidden;
-	
 }
 
-.xltheme-item-3 h4 {
+.xltheme-item-2 h4 {
 	align-self: center;
-	padding: 12px;
 }
 
 .news-wrap {
@@ -169,6 +171,37 @@ figcaption {
 	margin: 4px 0;
 }
 
+/* Блок обзоров продукции */
+
+.xltheme-item-3 {
+	background-color: rgb(245,245,245);
+	border-radius: 4px;
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.rewew-block {
+	align-items: center;
+	background-color: white;
+	border-radius: 2px;
+	display: flex;
+	flex-flow: row wrap;
+	
+	margin: 4px 0;
+	padding: 2px 4px;
+	text-align: center;
+}
+
+.rewew-block a {
+	width: 50%;
+}
+
+.rewew-block img {
+	object-fit: contain;
+}
+
+/* Блок темы недели */
+
 .xltheme-item-4 {
 	background-color: rgba(245,245,245,1);
 	display: flex;
@@ -178,8 +211,6 @@ figcaption {
 
 .xltheme-item-4 h4{
 	align-self: center;
-	padding: auto;
-	margin: auto;
 }
 
 .theme-4-wrap {
@@ -225,6 +256,8 @@ figcaption {
 	text-decoration: none; 
 }
 
+/* Блок советов по уходу */
+
 .add-xlcard {
 	background-color: rgb(245,245,205);
 	margin: 3vh 0 0 0;
@@ -256,6 +289,8 @@ figcaption {
 	text-align: center;
 }
 
+/* Оформление footer */
+
 .footer {
 	background-color: rgb(0,0,0);
 	color: rgb(255,255,255);
@@ -265,10 +300,13 @@ figcaption {
 	margin-bottom: 0;
 }
 
+/* Привязка класса к выпадающему меню header при нажатии */
 
 .show {
 	display: block;
 }
+
+/* Медиазапросы */
 
 @media (max-width: 586px) {
 	
@@ -281,7 +319,14 @@ figcaption {
 	}
 }
 
-@media (min-width: 587px) and (max-width: 1250px) {
+@media (min-width: 587px) and (max-width: 954px) {
+
+	.xltheme-item-1 img {
+		height: 420px;
+	}
+}
+
+@media (min-width: 587px) and (max-width: 1282px) {
 
 	.xltheme-item-1, .xltheme-item-2, .xltheme-item-3 {
 		width: 48%;
@@ -292,7 +337,15 @@ figcaption {
 	}
 }
 
-@media (min-width: 1250px) and (max-width: 2000px) {
+@media (min-width: 1283px) and (max-width: 1475px) {
+
+.xltheme-item-1 img {
+	height: 420px;
+}
+}
+
+
+@media (min-width: 1283px) and (max-width: 2000px) {
 
 	.xltheme-item-2, .xltheme-item-3 {
 		width: 20%;
@@ -303,6 +356,16 @@ figcaption {
 		width: 15vw;
 	}
 	
+}
+
+@media (min-width: 1283px) and (max-width: 1724px) {
+	.rewew-wrap div:nth-child(2) {
+		display: none;
+	}
+
+	.news-wrap div:nth-child(4) {
+		display: none;
+	}
 }
 
 @media (min-width: 587px) and (max-width: 2000px) {
@@ -320,10 +383,6 @@ figcaption {
 
 	.xltheme-item-1 {
 		width: 50%;
-	}
-
-	.xltheme-item-3 {
-		margin: 3vh 0;
 	}
 
 	.xltheme-item-4 {
