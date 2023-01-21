@@ -4,7 +4,7 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
-a {
+a, a:hover, a:active {
 	text-decoration: none;
 	color: black;
 }
@@ -118,15 +118,17 @@ button:active, button:focus {
 }
 
 /* Центральное фото с подписью */
+
 figure {
+	display: flex;
+	flex-flow: column wrap;
 	margin: 0;
 }
-
-
 
 figcaption {
 	background-color: rgb(245,245,245);
 	font: italic smaller 'Rubic', sans-serif;
+	margin: 0;
 }
 
 /* Новостной блок */
@@ -184,6 +186,7 @@ figcaption {
 	background-color: white;
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: space-between;
 	margin: 4px 0;
 	padding: 2px 4px;
 	text-align: center;
@@ -203,11 +206,6 @@ figcaption {
 	background-color: rgba(245,245,245,1);
 	display: flex;
 	flex-flow: column wrap;
-	margin-top: 3vh;
-}
-
-.xltheme-item-4 h4{
-	align-self: center;
 }
 
 .theme-4-wrap {
@@ -218,25 +216,12 @@ figcaption {
 	outline: none;	
 }
 
-.theme-4-wrap a {
-	padding: 4px;
-}
-
-.theme-4-wrap img {
-	height: 100%;
-	border-radius: 4px;
-}
-
 .some {
 	background-color: rgba(255,255,245,0.75);
 	position: absolute;
 	left: 0%;
 	right: 0%;
 	top: 0%;
-}
-
-.some p {
-  margin: 4px auto;
 }
 
 .some-2 {
@@ -248,27 +233,18 @@ figcaption {
   bottom: 0%;
 }
 
-.theme-4-wrap a:hover a:active {
-	color: black;
-	text-decoration: none; 
-}
-
 /* Блок советов по уходу */
 
-.add-xlcard {
-	background-color: rgb(245,245,205);
-	margin: 3vh 0 0 0;
-	padding: 20px;
-	text-align: center;
+.xltheme-item-5 {
+	background-color: rgb(245,245,245);
+	display: flex;
+	flex-flow: column wrap;
 }
 
 .xlcard {
-	margin-top: 0;
-	background-color: rgb(245,245,205);
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding: 0 4px;
 }
 
 .cardref {
@@ -276,25 +252,30 @@ figcaption {
 }
 
 .card {
-	border-radius: 4px;
+	box-shadow: 0px 0px 6px 4px rgba(0,0,0,0.2);
 	display: flex;
 	flex-direction: column;
-	height: 16vh;
-	margin-bottom: 3vh;
 	overflow: hidden;
-	width: 30vw;
 	text-align: center;
 }
 
 /* Оформление footer */
 
 .footer {
+	display: flex;
 	background-color: rgb(0,0,0);
 	color: rgb(255,255,255);
+	justify-content: space-around;
 }
 
-.footer ul {
-	margin-bottom: 0;
+.footer-item {
+	display: flex;
+	flex-flow: column wrap;
+	width: 30%;
+}
+
+.footer-item a {
+	color: white;
 }
 
 /* Привязка класса к выпадающему меню header при нажатии */
@@ -311,8 +292,22 @@ figcaption {
 		display: none;
 	}
 	
+	.rewew-block a {
+		width: 45%;
+	}
+	
 	.card {
-		width: 37.5vw;
+		height: 18vh;
+		width: 45%;
+		margin-bottom: 10%;
+	}
+	
+	.xltheme-item-2, .xltheme-item-3, .xltheme-item-4 {
+		margin-top: 5vh;
+	}
+	
+	.xltheme-item-4 {
+		margin-bottom: 5vh;
 	}
 }
 
@@ -395,10 +390,5 @@ figcaption {
 
 	.xltheme-item-4 {
 		width: 50%;
-	}
-	
-	.card {
-		height: 26vh;
-		width: 18vw;
 	}
 }
