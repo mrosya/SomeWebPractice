@@ -23,6 +23,10 @@ h1, h2, h3, h4 {
 	width: 100%;
 }
 
+.main-p {
+	text-align: center;
+}
+
 .content_blank {
 	width: 10vw;
 }
@@ -148,6 +152,10 @@ figcaption {
 
 .news-wrap div:last-child {
 	margin-bottom: 6px;
+}
+
+.news-wrap div:first-child {
+	margin-top: 6px;
 }
 
 .news-time {
