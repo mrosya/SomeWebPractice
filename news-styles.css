@@ -1,0 +1,23 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.xltheme-news-link {
+	background-color: rgb(245,245,245);
+	display: flex;
+	flex-flow: column wrap;
+	height: inherit;
+}
+
+.news-link-content {
+	background-color: white;
+	display: flex;
+	flex-flow: column wrap;
+	margin: 3px 0;
+	padding: 6px;
+}
+
+.date {
+	font: italic smaller 'Rubic', sans-serif;
+}
