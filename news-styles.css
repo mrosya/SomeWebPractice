@@ -10,6 +10,20 @@ body {
 	height: inherit;
 }
 
+.news-main-block-wrap {
+	background-color: rgb(245,245,245);
+	padding:6px 6px 0 6px;
+}
+
+.news-main-block-wrap img {
+	padding-bottom: 0;
+}
+
+.news-main-block {
+	background-color: white;
+	padding: 6px;
+}
+
 .news-link-content {
 	background-color: white;
 	display: flex;
