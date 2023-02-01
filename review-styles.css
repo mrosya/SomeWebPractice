@@ -1,0 +1,27 @@
+.review-wrap-link {
+	background-color: rgb(245,245,245);
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	padding: 6px;
+}
+	
+.review-block-link {
+	align-items: center;
+	background-color: white;
+	display: flex;
+	flex-flow: row wrap;
+	margin: 3px 0;
+	padding: 6px;
+}
+h4 {
+	width: 100%;
+}
+
+.review-block-link img {
+	width: 45%;
+}
+
+.review-block-link p {
+	width: 45%;
+}
