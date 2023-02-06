@@ -157,20 +157,11 @@ button:active, button:focus {
 
 .news-block {
 	background-color: white;
-	margin: 3px 0;
-	padding: 6px;
-}
-
-.news-wrap div:last-child {
 	margin-bottom: 6px;
-}
-
-.news-wrap div:first-child {
-	margin-top: 6px;
+	padding: 3px;
 }
 
 .news-time {
-	margin: 0;
 	font-size: small;
 }
 
@@ -197,8 +188,8 @@ button:active, button:focus {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
-	margin: 3px 0;
-	padding: 6px;
+	margin-bottom: 6px;
+	padding: 3px;
 	text-align: center;
 }
 
@@ -217,10 +208,6 @@ button:active, button:focus {
   width: 50%;
 }
 
-.rewew-wrap div:last-child {
-	margin-bottom: 6px;
-}
-
 /* Блок темы недели */
 
 .xltheme-item-4 {
@@ -234,13 +221,11 @@ button:active, button:focus {
 	position: relative;
 	display: flex;
 	flex-flow: column;
-	outline: none;	
 }
 
 .capture {
 	background-color: rgba(255,255,245,0.75);
 	position: absolute;
-	margin-top: 3px;
 	left: 0%;
 	right: 0%;
 	top: 0%;
