@@ -2,7 +2,6 @@ body {
 	padding: 0;
     margin: 0;
     font-family: 'Rubik', sans-serif;
-	
 }
 
 a, a:hover, a:active {
@@ -11,6 +10,7 @@ a, a:hover, a:active {
 }
 
 img {
+    border: none;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -263,6 +263,7 @@ button:active, button:focus {
 
 .item-5-wrap p {
 	font-size: large;
+	text-indent: 1em;
 }
 
 /* Блок советов по уходу */
@@ -280,16 +281,13 @@ button:active, button:focus {
 	justify-content: space-between;
 }
 
-.cardref {
-	background-color: rgb(245,245,245);
-}
-
 .card {
 	box-shadow: 0px 0px 6px 4px rgba(0,0,0,0.2);
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
 	text-align: center;
+	margin-bottom: 5vh;
 }
 
 
@@ -347,16 +345,21 @@ button:active, button:focus {
 	}	
 }
 
-@media (min-width: 866px) {
-
-	.xltheme {
-		justify-content: space-between;
-	}
-}
 
 @media (max-width: 865px) {
 	.xltheme-item-1, .xltheme-item-2, .xltheme-item-3 {
 		width: 100%;
+	}
+	
+	.card {
+		width: 45%;
+	}
+}
+
+@media (min-width: 866px) {
+
+	.xltheme {
+		justify-content: space-between;
 	}
 }
 
