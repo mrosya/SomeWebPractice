@@ -3,23 +3,23 @@ body {
 	padding: 0;
 }
 
-.xltheme-news-link {
+.news-topic-main {
 	background-color: rgb(245,245,245);
 	display: flex;
 	flex-flow: column wrap;
 	height: inherit;
 }
 
-.news-main-block-wrap {
+.news-topic-main-wrap {
 	background-color: rgb(245,245,245);
 	padding:6px 6px 0 6px;
 }
 
-.news-main-block-wrap img {
+.main-news-wrap img {
 	padding-bottom: 0;
 }
 
-.news-main-block {
+.main-news {
 	background-color: white;
 	padding: 6px;
 }
