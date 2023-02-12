@@ -3,35 +3,28 @@ body {
 	padding: 0;
 }
 
+.news-topic-wrap {
+  background-color: rgb(245,245,245);
+  padding: 6px;
+}
+
 .news-topic-main {
-	background-color: rgb(245,245,245);
+	background-color: rgb(255,255,255);
 	display: flex;
 	flex-flow: column wrap;
-	height: inherit;
+	margin-bottom: 6px;
 }
 
-.news-topic-main-wrap {
-	background-color: rgb(245,245,245);
-	padding:6px 6px 0 6px;
+.news-topic-block {
+	background-color: rgb(255,255,255);
+	margin-bottom: 6px;
+	padding: 3px;
 }
 
-.main-news-wrap img {
-	padding-bottom: 0;
+.news-topic-wrap div:last-child {
+  margin-bottom: 0;
 }
 
-.main-news {
-	background-color: white;
-	padding: 6px;
-}
-
-.news-link-content {
-	background-color: white;
-	display: flex;
-	flex-flow: column wrap;
-	margin: 3px 0;
-	padding: 6px;
-}
-
-.date {
-	font: italic smaller 'Rubic', sans-serif;
+.news-time {
+  font: italic smaller 'Rubic', sans-serif;
 }
