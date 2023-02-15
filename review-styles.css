@@ -11,17 +11,21 @@
 	background-color: white;
 	display: flex;
 	flex-flow: row wrap;
-	margin: 3px 0;
+	justify-content: space-between;
+	margin-bottom: 6px;
 	padding: 6px;
 }
-h4 {
+
+.review-wrap-link div:last-child {
+	margin-bottom: 0;
+}
+
+.review-block-link img, .review-block-link p {
+	width: 45%;
+}
+
+.review-block-link-link {
 	width: 100%;
-}
-
-.review-block-link img {
-	width: 45%;
-}
-
-.review-block-link p {
-	width: 45%;
+	text-align: right;
+	font-size: 0.9em;
 }
