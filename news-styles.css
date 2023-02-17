@@ -1,30 +1,188 @@
 body {
-	margin: 0;
+	padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+	color: black;
+}
+
+img {
+    border: none;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+li {
+	list-style-type: none;
+}
+
+h1 {
+	margin-top: 5vh;
+}
+
+h1, h2, h3, h4 {
+	text-align: center;
+	width: 100%;
+}
+
+.main-p {
+	text-align: center;
+}
+
+.content_blank {
+	width: 10vw;
+}
+
+/* Оформление header и выпадающего меню */
+
+header {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	background-color: rgb(245, 245, 245);
+	border-bottom-left-radius: 4px;
+	border-top-left-radius: 4px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+header li {
+	display: inline-block;
+	margin-left: 15px;
+}
+
+header ul {
 	padding: 0;
 }
 
-.news-topic-wrap {
-  background-color: rgb(245,245,245);
-  padding: 6px;
-}
-
-.news-topic-main {
-	background-color: rgb(255,255,255);
+.header-wrap {
+	width: 80%;
+	margin: 0 auto;
 	display: flex;
-	flex-flow: column wrap;
-	margin-bottom: 6px;
+	justify-content: center;
 }
 
-.news-topic-block {
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown button {
+	outline: none;
+	border: none;
+	background-color: rgb(245, 245, 245);
+	height: 100%;
+	width: 15vw;
+}
+
+.dropcontent {
+	display: none;
+	position: absolute;
+	min-width: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	background-color: rgb(245,245,245);
+}
+
+.dropref {
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.dropcontent a {
+	display: block;
+	padding: 6px 8px;	
+}
+
+button:active, button:focus {
+	outline: none;
+}
+
+#canvas {
+	vertical-align: middle;
+}
+
+.blank {
+	height: 100%;
+	width: 15vw;
+}
+
+/* Контент страницы */
+
+.content-wrap {
+	display: flex;
+}
+
+.content {
+	width: 100%;
+}
+
+/* Новостной блок */
+
+.global-news-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.top-news-wrap, .topic-news-wrap {
+	background-color: rgb(245,245,245);
+	display: flex;
+	flex-flow: column;
+	height: inherit;
+	width: 45%;
+}
+
+.top-news, .topic-news-block-wrap {
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	height: 100%;
+	padding: 0 6px;
+}
+
+.top-news-block, .topic-news-block {
 	background-color: rgb(255,255,255);
 	margin-bottom: 6px;
 	padding: 3px;
 }
 
-.news-topic-wrap div:last-child {
-  margin-bottom: 0;
-}
-
 .news-time {
   font: italic smaller 'Rubic', sans-serif;
+}
+
+/* Привязка класса к выпадающему меню header при нажатии */
+
+.show {
+	display: block;
+}
+
+/* Медиазапросы */
+
+@media (max-width: 586px) {
+	
+	.header-wrap {
+		display: none;
+	}	
+}
+
+@media (min-width: 587px) {
+
+	.logo, .blank, .dropdown {
+		display: none;
+	}	
+
+	.topic-news-wrap {
+		width: 45%;
+	}
+}
+
+@media (max-width: 1283px) {
+
+	.top-news-wrap, .topic-news-wrap {
+		width: 100%;
+		margin-bottom: 5vh;
+	}
 }
