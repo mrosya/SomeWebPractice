@@ -148,7 +148,7 @@ button:active, button:focus {
 	height: inherit;
 }
 
-.news-wrap {
+.topic-news-wrap {
 	display: flex;
 	flex-flow: column;
 	justify-content: space-between;
@@ -253,8 +253,7 @@ button:active, button:focus {
 }
 
 .item-5-wrap {
-	background-image: url(poh.jpg);
-	background-size: contain;
+	background-color: white;
 	display: flex;
 	flex-direction: column;
 	height: 100%;
@@ -342,7 +341,11 @@ button:active, button:focus {
 
 	.logo, .blank, .dropdown {
 		display: none;
-	}	
+	}
+
+	.card {
+		width: 45%;
+	}
 }
 
 
@@ -351,15 +354,17 @@ button:active, button:focus {
 		width: 100%;
 	}
 	
-	.card {
-		width: 45%;
-	}
+	
 }
 
 @media (min-width: 866px) {
 
 	.xltheme {
 		justify-content: space-between;
+	}
+
+	.card {
+		width: 40%;
 	}
 }
 
@@ -373,9 +378,10 @@ button:active, button:focus {
 		margin-top: 5vh;
 	}
 
-	.news-wrap div:last-child {
+	.topic-news-wrap div:last-child {
 		display: none;
 	}
+
 	.rewew-wrap div:nth-child(2) {
 		display: none;
 	}
@@ -396,7 +402,7 @@ button:active, button:focus {
 	}
 
 	.card {
-		width: 25%;
+		width: 20%;
 	}
 
 	.content_blank {
