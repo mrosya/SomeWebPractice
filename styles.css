@@ -225,7 +225,7 @@ button:active, button:focus {
 }
 
 .capture {
-	background-color: rgba(255,255,245,0.75);
+	background-color: rgba(255,255,255,0.7);
 	position: absolute;
 	left: 0%;
 	right: 0%;
@@ -233,7 +233,7 @@ button:active, button:focus {
 }
 
 .capture-2 {
-  background-color: rgba(245,245,245,0.4);
+  background-color: rgba(255,255,255,0.7);
   position: absolute;
   left: 0%;
   right: 0%;
@@ -272,6 +272,7 @@ button:active, button:focus {
 	display: flex;
 	flex-flow: column wrap;
 	margin-top: 5vh;
+	margin-bottom: 5vh;
 }
 
 .xlcard {
@@ -334,7 +335,11 @@ button:active, button:focus {
 	
 	.header-wrap {
 		display: none;
-	}	
+	}
+		
+	.xlcard div:last-child {
+	margin-bottom: 0;
+	}
 }
 
 @media (min-width: 587px) {
@@ -342,7 +347,11 @@ button:active, button:focus {
 	.logo, .blank, .dropdown {
 		display: none;
 	}
-
+  
+  .xlcard div:nth-child(3), .xlcard div:nth-child(4) {
+  margin-bottom: 0;
+  }
+  
 	.card {
 		width: 45%;
 	}
