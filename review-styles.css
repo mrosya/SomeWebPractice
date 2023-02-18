@@ -179,7 +179,18 @@ button:active, button:focus {
 	}	
 }
 
-@media (max-width: 1283px) {
+@media (max-width: 865px) {
+
+  .content h2 {
+  text-align: center;
+  }
+  
+  .review-wrap {
+    width: 100%
+    }
+}
+
+@media (min-width: 857px) {
 
 	.review-wrap {
 		width: 45%;
