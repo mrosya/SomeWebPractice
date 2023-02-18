@@ -119,6 +119,11 @@ button:active, button:focus {
 	width: 100%;
 }
 
+/* */
+
+.content p {
+  text-indent: 1em;
+}
 
 /* Привязка класса к выпадающему меню header при нажатии */
 
